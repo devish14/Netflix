@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Body from './components/Body'
 
 const App = () => {
     return (
         <div>
-            <h1> Welcome to the netflix project</h1>
+          <Body />
         </div>
     )
 } 
