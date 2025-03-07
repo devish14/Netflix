@@ -1,5 +1,5 @@
 import React from 'react';
-import { NETFLIX_LOGO } from '../utils/config';
+import { NETFLIX_LOGO } from '../utils/Config';
 
 const Header = () => {
   return (
