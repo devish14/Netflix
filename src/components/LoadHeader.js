@@ -21,12 +21,13 @@ const LoadHeader = () => {
         <img className="" src={NETFLIX_LOGO} />
       </div>
       <div className="flex items-center ">
+      <button className="font-bold text-white text-lg p-2 bg-[#720e9e]">GPT Search</button>
         <img className="mr-1 w-7" src={SIGN_OUT_LOGO} />
         <button
           onClick={handleSignOut}
           className="font-bold text-white text-lg p-2"
         >
-          Sign Out
+          Sign Outtdj
         </button>
       </div>
     </div>

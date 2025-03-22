@@ -11,13 +11,17 @@ import {
 } from "firebase/auth";
 import { auth } from "../utils/Firebase";
 import { addUser } from "../utils/slice/UserSlice.js";
+import { useSelector } from "react-redux";
 
 const Login = () => {
   const [signIn, setIsSignIn] = useState(true);
   const [errorMsg, setErrorMsg] = useState();
+  
+  // Access the user state from Redux store
+  const user = useSelector((state) => state.user);
+  console.log(user, "user"); // Log the user state to the console
 
   const dispatch = useDispatch();
-
 
   const changeSignUp = () => {
     setIsSignIn(!signIn);
@@ -72,7 +76,6 @@ const Login = () => {
                   phoneNumber: phoneNumber,
                 })
               );
-              
             })
             .catch((error) => {
               setErrorMsg(error);
