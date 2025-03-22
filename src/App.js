@@ -10,7 +10,7 @@ import "./utils/fontAwesome.js"; // Ensure this import comes before components u
 
 const App = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Provider store={appStore}>
         <Body />
         <Outlet />
