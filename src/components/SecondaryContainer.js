@@ -4,6 +4,7 @@ import MovieLists from "./MovieLists";
 
 const SecondaryContainer = () => {
     moviesSelector = useSelector((store)=> store?.movies )
+      // console.log(moviesSelector)
     
   return (
     <div>
@@ -12,6 +13,8 @@ const SecondaryContainer = () => {
       <MovieLists title={"Popular"} movies={moviesSelector?.popularMovie}/>
       <MovieLists title={"Upcoming"} movies={moviesSelector?.upcomingMovie}/>
       <MovieLists title={"Thriller"} movies={moviesSelector?.thrillerMovie}/>
+      <MovieLists title={"Drama"} movies={moviesSelector?.dramaMovie}/>
+      <MovieLists title={"Series"} movies={moviesSelector?.fetchMovies}/>
     </div>
   );
 };

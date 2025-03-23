@@ -27,7 +27,7 @@ const LoadHeader = () => {
           onClick={handleSignOut}
           className="font-bold text-white text-lg p-2"
         >
-          Sign Outtdj
+        Sign Outt new
         </button>
       </div>
     </div>

@@ -106,13 +106,14 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <Header />
-      <div className="absolute">
-        <img src={NETFLIX_BACKGROUND_LOGO} className="" />
+      <div className="absolute ">
+      <img src={NETFLIX_BACKGROUND_LOGO} className="" />
       </div>
+      <div className="absolute top-[100px] left-0 right-0 mx-auto">
       <form
-        className="relative p-10 bg-black/80 top-[90px] text-white max-w-md mx-auto rounded-lg"
+        className=" p-10 bg-black/80 text-white max-w-md mx-auto rounded-lg"
         onSubmit={(e) => e.preventDefault()}
       >
         <div className="text-[rgb(255,255,255)] mb-3 font-bold text-3xl">
@@ -164,6 +165,7 @@ const Login = () => {
           </span>
         </div>
       </form>
+      </div>
     </div>
   );
 };
